@@ -13,7 +13,7 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
-Desktop.ini
+Desktop.ini git commit -m "first commit"
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
