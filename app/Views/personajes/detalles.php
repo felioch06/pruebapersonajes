@@ -7,6 +7,7 @@
         <div class="row">
             <div class="col-md-12">
 
+                <!-- Detalles de cada personaje -->
                 <div class="card mb-3">
                     <div class="row no-gutters">
                         <div class="col-md-4">

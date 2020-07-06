@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-md-12">
 
+                <!-- formulario para editar cada personaje -->
                 <form action="api/actualizar" method="post" enctype="multipart/form-data">
                 <input type="hidden" class="form-control" value="<?php echo $personaje['id_personaje'] ?>" name="id" required>
 

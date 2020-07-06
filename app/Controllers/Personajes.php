@@ -11,6 +11,7 @@ class Personajes extends BaseController
 	//muetra la lista de  personajes
 	public function index(){
 		$PersonajeModel = new PersonajeModel;
+		// consultas
 		$personajes = $PersonajeModel->findAll();
 
 		$compact = [ "personajes" => $personajes, "header" => view('personajes/templates/header'), "banner" => view('personajes/templates/banner'),"footer" => view('personajes/templates/footer'),]; 
@@ -107,6 +108,7 @@ class Personajes extends BaseController
 		];
 
 		$RelacionModel = new RelacionModel;
+		// consultas
 		$RelacionModel->insert($data);
 
 		return redirect()->route('personajes');
@@ -132,6 +134,7 @@ class Personajes extends BaseController
 		];
 
 		$PersonajeModel = new PersonajeModel;
+		// consultas
 		$PersonajeModel->insert($data);
 
 		return redirect()->route('personajes');
@@ -149,6 +152,7 @@ class Personajes extends BaseController
 		$imagen = 'public/img/'.$name_file;
 
 		$PersonajeModel = new PersonajeModel;
+		// consultas
 		$personaje = $PersonajeModel->find($id);
 
 		// esta condición valida que la imagen no haya sufrido cambios a la hora de
@@ -192,6 +196,7 @@ class Personajes extends BaseController
 		$id = $req->getPostGet('id');
 
 		$PersonajeModel = new PersonajeModel;
+		// consultas
 		$personaje = $PersonajeModel->find($id);
 
 		if($personaje['foto'] == "public/img/"){

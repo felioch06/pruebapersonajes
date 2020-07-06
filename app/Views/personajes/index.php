@@ -3,14 +3,16 @@
 <?= $banner ?>
 
     <div class="container my-5">
+
         <a href="crear" class="btn btn-success mb-5" >Crear Personaje</a>
         <a href="relacion" class="btn btn-info mb-5" >Crear Relación</a>
+
         <div class="row">
             <div class="col-md-12">
 
             <div class="row row-cols-1 row-cols-md-3">
 
-    
+        <!-- listado de los personajes -->
         <?php foreach($personajes as $personaje){ ?>
                 <div class="col mb-4">
                     <div class="card">

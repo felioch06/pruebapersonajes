@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-md-12">
 
+                <!-- Formulario para crear personaje -->
                 <form action="api/guardar" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="">Nombre</label>

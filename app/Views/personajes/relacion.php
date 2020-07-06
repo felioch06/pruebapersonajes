@@ -6,8 +6,8 @@
         <div class="row">
             <div class="col-md-12">
 
+                <!-- formulario para agregar una relación a la base de datos -->
                 <form action="api/relacion" method="post" enctype="multipart/form-data">
-
                     <div class="form-group">
                     <label for="">Personaje Principal</label>
 
